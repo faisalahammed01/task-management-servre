@@ -15,7 +15,7 @@ app.use(express.json());
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: "http://localhost:5173",
+    origin: "https://task-management00.web.app/",
     methods: ["GET", "POST", "PUT", "DELETE"],
   },
 });
